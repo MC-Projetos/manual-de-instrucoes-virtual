@@ -1,6 +1,7 @@
 import './App.css';
 //import React, { useState, useEffect } from 'react';
 import { Routes, Route, Link } from "react-router-dom";
+import banho from './img/banho-maria.png';
 
 function App() {
   return (
@@ -65,7 +66,6 @@ function Indice() {
     </>
   );
 }
-
 function AgitadorMec() {
   return (
     <>
@@ -86,7 +86,6 @@ function AgitadorMec() {
     </>
   );
 }
-
 function Argamassadeira() {
   return (
     <>
@@ -104,7 +103,6 @@ function Argamassadeira() {
     </>
   );
 }
-
 function Balança() {
   return (
     <>
@@ -127,11 +125,12 @@ function Balança() {
     </>
   );
 }
-
 function BanhoMaria() {
   return (
     <>
       <h2 className="Header">Banho Maria</h2>
+
+      <img className='banho-maria'src={banho}></img>
       <p className="Header">
         ⚠️ Atenção, antes de usar verifique: ⚠️ <br></br><br></br>
             - A voltagem do equipamento; <br></br>
