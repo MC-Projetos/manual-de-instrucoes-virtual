@@ -1,5 +1,5 @@
+// Importações
 import './App.css';
-//import React, { useState, useEffect } from 'react';
 import { Routes, Route, Link } from "react-router-dom";
 import banho from './img/banho-maria.png';
 
@@ -7,7 +7,6 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="indice" element={<Indice />} />
@@ -18,12 +17,10 @@ function App() {
           <Route path="moinho" element={<MoinhoOsc />} />
           <Route path="teste" element={<teste />} />
         </Routes>
-        
       </header>
     </div>
   );
 }
-
 function Home() {
   return (
     <>
@@ -41,23 +38,22 @@ function Home() {
     </>
   );
 }
-
 function Indice() {
   return (
     <>
-      <nav className='box'>
+      <nav className='box1'>
         <Link className="App-link" to="/agitador">Agitador Mecânico</Link>
       </nav>
-      <nav className='box'>
+      <nav className='box2'>
         <Link className="App-link" to="/argamassadeira">Argamassadeira</Link>
       </nav>
-      <nav className='box'>
+      <nav className='box3'>
         <Link className="App-link" to="/balanca">Balança</Link>
       </nav>
-      <nav className='box'>
+      <nav className='box4'>
         <Link className="App-link" to="/banho">Banho Maria</Link>
       </nav>
-      <nav className='box'>
+      <nav className='box5'>
         <Link className="App-link" to="/moinho">Moinho Oscilatório</Link>
       </nav>
       <nav className='box'>
@@ -70,7 +66,7 @@ function AgitadorMec() {
   return (
     <>
       <h2 className="Header">Agitador Mecânico</h2>
-      <p className='text'>
+      <p className='text1'>
         Utilizado para misturar, dissolver ou homogeneizar soluções e suspensões de maneira eficiente e controlada<br /> Insira sua mensagem aqui... {/* O <br /> funciona como quebra de linha! */}
         Insira sua mensagem aqui... <br /> Insira sua mensagem aqui... <br />Insira sua mensagem aqui...
       </p>
@@ -128,9 +124,10 @@ function Balança() {
 function BanhoMaria() {
   return (
     <>
-      <h2 className="Header">Banho Maria</h2>
+    <header className='App-header4'>
+      <h2 className="Header-Title">Banho Maria</h2>
 
-      <img className='banho-maria'src={banho}></img>
+      {/*<img className='banho-maria'src={banho}></img>*/}
       <p className="Header">
         ⚠️ Atenção, antes de usar verifique: ⚠️ <br></br><br></br>
             - A voltagem do equipamento; <br></br>
@@ -140,12 +137,16 @@ function BanhoMaria() {
 
               - Conecte o cabo de alimentação na rede elétrica; <br></br>
               - Insira o fluido de trabalho na cuba sem encher demais. Mantenha no mínimo <br></br>
-                1 cm de distância entre o fluido e a borda da cuba; <br></br>
+              1 cm de distância entre o fluido e a borda da cuba; <br></br>
               - Ligue a chave geral na posição "ligado"; <br></br>
-              - Acione a chave de agitação. Lembre-se de inserir a pastilha de teflon no interior da cuba;<br></br>
-              - Configure o controlador de temperatura usandoas teclas de incremento e decremento; <br></br>
-              - Note que ao teclar o visor de temperatura ofertada irá oscilar, configure na temperatura
-              de trabalho. Em seguida, o visor de temperatura interna irá começar a variar de acordo com a configuração.
+              - Acione a chave de agitação. Lembre-se de inserir a <br></br> 
+              pastilha de teflon no interior da cuba;<br></br>
+              - Configure o controlador de temperatura usandoas <br></br>
+              teclas de incremento e decremento; <br></br>
+              - Note que ao teclar o visor de temperatura ofertada <br></br> 
+              irá oscilar, configure na temperatura de trabalho. <br></br>
+              Em seguida, o visor de temperatura interna irá começar <br></br>
+              a variar de acordo com a configuração.
       </p>
       <nav className='box'>
         <Link className="App-link" to="/moinho">Avançar</Link>
@@ -156,10 +157,11 @@ function BanhoMaria() {
       <nav className='box'>
         <Link className="App-link" to="/indice">Índice</Link>
       </nav>
+    </header>
     </>
+    
   );
 }
-
 function MoinhoOsc() {
   return (
     <>
@@ -179,4 +181,3 @@ function MoinhoOsc() {
 }
    
 export default App;
-
