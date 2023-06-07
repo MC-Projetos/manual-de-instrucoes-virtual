@@ -138,7 +138,6 @@ function BanhoMaria() {
 
             Após isso, siga as instruções de operação:<br></br>
 
-
               - Conecte o cabo de alimentação na rede elétrica; <br></br>
               - Insira o fluido de trabalho na cuba sem encher demais. Mantenha no mínimo <br></br>
                 1 cm de distância entre o fluido e a borda da cuba; <br></br>
