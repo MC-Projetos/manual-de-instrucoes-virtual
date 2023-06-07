@@ -3,6 +3,7 @@ import './App.css';
 import { Routes, Route, Link } from "react-router-dom";
 import banho from './img/banho-maria.png';
 import logo from './img/logo.png';
+import logoeel from './img/logoeel.png';
 
 function App() {
   return (
@@ -33,7 +34,8 @@ function Home() {
       <nav className='box'>
         <Link className="App-link" to="/indice">Clique aqui!</Link>
       </nav>
-      <img className="logo" src={logo}></img>
+      <img className="logo" src={logo} alt="logo da mc projetos"></img>
+      <img className="logoeel" src={logoeel} alt="logo da escola de engenharia de lorena"></img>
     </header>
     </>
   );
@@ -68,7 +70,7 @@ function Indice() {
 function AgitadorMec() {
   return (
     <>
-      <header className="App-header">
+      <header className="App-header1">
         <h2 className="Header">Agitador Mecânico</h2>
         <p className='text1'>
           Utilizado para misturar, dissolver ou homogeneizar soluções e suspensões de maneira eficiente e controlada<br /> Insira sua mensagem aqui... {/* O <br /> funciona como quebra de linha! */}
@@ -90,7 +92,7 @@ function AgitadorMec() {
 function Argamassadeira() {
   return (
     <>
-    <header className="App-header">
+    <header className="App-header2">
       <h2 className="Header">Argamassadeira</h2>
       <p className="Header">Insira sua mensagem aqui...</p>
       <nav className='box'>
@@ -109,7 +111,7 @@ function Argamassadeira() {
 function Balança() {
   return (
     <>
-    <header className="App-header">
+    <header className="App-header3">
         <h2 className="Header">Balança</h2>
         <p className='text1'>  Insira sua mensagem aqui...<br /> Insira sua mensagem aqui... {/* O <br /> funciona como quebra de linha! */}
           Insira sua mensagem aqui...  <br /> Insira sua mensagem aqui...
@@ -135,8 +137,6 @@ function BanhoMaria() {
     <>
     <header className='App-header4'>
       <h2 className="Header-Title">Banho Maria</h2>
-
-      {/*<img className='banho-maria'src={banho}></img>*/}
       <p className="Header">
         ⚠️ Atenção, antes de usar verifique: ⚠️ <br></br><br></br>
             - A voltagem do equipamento; <br></br>
@@ -157,6 +157,7 @@ function BanhoMaria() {
               Em seguida, o visor de temperatura interna irá começar <br></br>
               a variar de acordo com a configuração.
       </p>
+      <img className='banho-maria'src={banho}></img>
       <nav className='box'>
         <Link className="App-link" to="/moinho">Avançar</Link>
       </nav>
@@ -174,7 +175,7 @@ function BanhoMaria() {
 function MoinhoOsc() {
   return (
     <>
-    <header className="App-header">
+    <header className="App-header5">
       <h2 className="Header">Moinho Oscilatório</h2>
       <p className="Header">Insira sua mensagem aqui...</p>
       <nav className='box'>

@@ -7,7 +7,37 @@
     justify-content: center;
     font-size: calc(10px + 2vmin);
     color: white;
-    background-image: linear-gradient(to right, #9191fc, #ffffff);
+    background-image: linear-gradient(to right, #fc91d3, #9fa5f5);
+  }
+  .App-header1{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+    background-image: linear-gradient(90deg,rgb(223 130 67),#f19c22)
+  }
+  .App-header2 {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+    background-image: linear-gradient(90deg,rgb(241 156 34),#f19c22)
+  }
+  .App-header3 {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+    background-image: linear-gradient(90deg,rgb(76 195 67),#b3f122)
   }
   .App-header4 {
     min-height: 100vh;
@@ -18,6 +48,16 @@
     font-size: calc(10px + 2vmin);
     color: white;
     background-image: linear-gradient(90deg,#ff4646,#f19c22)
+  }
+  .App-header5 {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+    background-image: linear-gradient(90deg,rgb(169 34 241),#6674ec)
   }
   .board-box {
     width: 340px;
@@ -129,16 +169,39 @@
 
 /* Imagens */
 .banho-maria {
-  position: fixed;
+  display: inline-block;
   overflow: hidden;
+  position: relative;
   width: 340px;
-  margin-top: -266px;
-  margin-left: -995px;
+  height: 240px; /* Ajuste a altura conforme necessário */
 }
-.logo {
-  position: fixed;
-  overflow: hidden;
-  width: 78px;
-  margin-top: 510px;
-  margin-left: 155px;
+
+.banho-maria img {
+  transition: transform 0.3s;
 }
+
+.banho-maria:hover img {
+  transform: scale(1.2);
+  transform-origin: center;
+}
+
+
+
+
+
+
+
+  .logo {
+    position: fixed;
+    overflow: hidden;
+    width: 78px;
+    margin-top: 510px;
+    margin-left: 98px;
+  }
+  .logoeel {
+    position: fixed;
+    overflow: hidden;
+    width: 78px;
+    margin-top: 510px;
+    margin-left: -80px;
+  }
