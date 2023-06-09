@@ -4,6 +4,8 @@ import { Routes, Route, Link } from "react-router-dom";
 import banho from './img/banho-maria.png';
 import logo from './img/logo.png';
 import logoeel from './img/logoeel.png';
+import agitador from './img/agitador.png';
+import argamassadeira from './img/argamassadeira.png';
 
 function App() {
   return (
@@ -71,11 +73,26 @@ function AgitadorMec() {
   return (
     <>
       <header className="App-header1">
-        <h2 className="Header">Agitador Mecânico</h2>
-        <p className='text1'>
-          Utilizado para misturar, dissolver ou homogeneizar soluções e suspensões de maneira eficiente e controlada<br /> Insira sua mensagem aqui... {/* O <br /> funciona como quebra de linha! */}
-          Insira sua mensagem aqui... <br /> Insira sua mensagem aqui... <br />Insira sua mensagem aqui...
+        <h2 className="Header-Title">Agitador Mecânico</h2>
+        <p className="Header">
+          ⚠️ Atenção, antes de usar verifique: ⚠️ <br></br><br></br>
+            - A voltagem do equipamento; <br></br>
+            - Se a tomada está devidamente ligada e aterrada. <br></br><br></br>
+          Utilizado para misturar, dissolver ou homogeneizar soluções <br></br> 
+          e suspensões de maneira eficiente e controlada. Para utilizar, siga os seuintes passos:<br></br><br></br>
+            - Conecte o cabo de alimentação, ligue o interruptor de geral (1); <br></br>
+            - Defina a velocidade desejada girando controlador de velocidade (3), <br></br> 
+            feito isso pressione o controlador de velocidade (3), o motor ira iniciar; <br></br>
+            - Para desligar, pressionado novamente o controlador de velocidade (3); <br></br>
+            - Você pode definir um tempo de trabalho, pressione tecla set (2) <br></br>
+            para modificar o tempo, (faixa de 1-9999 minutos), definir o tempo <br></br> 
+            igual a 0 para desligar a função ,neste momento passará a operar em modo infinito; <br></br>
+            -  Para modificar a velocidade de subida (RPM / min) gire o controlador de velocidade (3); <br></br>
+            - Se a operação acima está funcionando normalmente, o instrumento pode ser utilizado; <br></br>
+            - Se não está funcionando corretamente, o instrumento pode ter configurações de <br></br>
         </p>
+        <img className='agitador'src={agitador}></img>
+
         <nav className='box'>
           <Link className="App-link" to="/argamassadeira">Avançar</Link>
         </nav>
@@ -93,8 +110,24 @@ function Argamassadeira() {
   return (
     <>
     <header className="App-header2">
-      <h2 className="Header">Argamassadeira</h2>
-      <p className="Header">Insira sua mensagem aqui...</p>
+      <h2 className="Header-Title">Argamassadeira</h2>
+      <p className="Header">⚠️ Atenção, antes de usar verifique: ⚠️ <br></br><br></br>
+        - Posicionar o equipamento em bancada firme e nivelada; <br></br>
+        -  Certificar-se de que a pá está bem fixada ao eixo; <br></br>
+        Certificar-se da tensão de alimentação elétrica e de <br></br>
+        que a chave elétrica localizada no lado esquerdo da <br></br> 
+        coluna está desligada (pos. 0 ) e conectar o equipamento à rede. <br></br><br></br>
+
+        - Posicionar o localizador da cuba no encaixe da base móvel; <br></br> 
+        Travar a cuba na base móvel girando para a direita a alavanca plástica, <br></br>
+        sem esforço excessivo;<br></br>
+        - Trazer a alavanca de elevação para a frente até a sua posição máxima; <br></br>
+        - Acionar o equipamento por meio da chave elétrica de 3 posições, <br></br> 
+        girando o botão para a posição1 (baixa rotação) <br></br> 
+        ou 2 (alta rotação), conforme especificação a ser seguida; <br></br>
+        - Retornar o botão da chave elétrica para a posição zero para finalizar a operação.
+      </p>
+      <img className='argamassadeira'src={argamassadeira}></img>
       <nav className='box'>
         <Link className="App-link" to="/balanca">Avançar</Link>
       </nav>
@@ -114,10 +147,6 @@ function Balança() {
     <header className="App-header3">
         <h2 className="Header">Balança</h2>
         <p className='text1'>  Insira sua mensagem aqui...<br /> Insira sua mensagem aqui... {/* O <br /> funciona como quebra de linha! */}
-          Insira sua mensagem aqui...  <br /> Insira sua mensagem aqui...
-          Insira sua mensagem aqui...<br />  Insira sua mensagem aqui...
-          Insira sua mensagem aqui... <br /> Insira sua mensagem aqui... <br />Insira sua mensagem aqui...
-          <br /><br />
         </p>
       <nav className='box'>
         <Link className="App-link" to="/banho">Avançar</Link>
@@ -178,9 +207,9 @@ function MoinhoOsc() {
     <header className="App-header5">
       <h2 className="Header">Moinho Oscilatório</h2>
       <p className="Header">Insira sua mensagem aqui...</p>
-      <nav className='box'>
+      {/*<nav className='box'>
         <Link className="App-link" to="/teste">Avançar</Link>
-      </nav>
+      </nav>*/}
       <nav className='box'>
         <Link className="App-link" to="/balanca">Voltar</Link>
       </nav>

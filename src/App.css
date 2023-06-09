@@ -90,7 +90,7 @@
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
     display: block;
-    text-align: justify;
+    text-align: center;
     padding: 20px;
     margin: 30px;
   }
@@ -173,14 +173,13 @@
   overflow: hidden;
   position: relative;
   width: 340px;
-  height: 240px; /* Ajuste a altura conforme necessário */
+  height: 240px;
+  top: -38px;
 }
-
-.banho-maria img {
+.banho-maria {
   transition: transform 0.3s;
 }
-
-.banho-maria:hover img {
+.banho-maria:hover  {
   transform: scale(1.2);
   transform-origin: center;
 }
