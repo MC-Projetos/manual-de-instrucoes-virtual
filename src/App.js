@@ -27,12 +27,14 @@ function Home() {
   return (
     <>
     <header className="App-header">
-      <div className='board-box'>
-        <h2 className='title'>Olá</h2>
-        <div className='text'>
-          Para acessar os manuais dos maquinários, clique no botão abaixo. 
-          Os manuais não são oficiais e podem conter erros. Em caso de dúvidas, contate um responsável.</div>
+    <h3 className='Header-Title1'>MC PROJETOS</h3>
+    <div className='board-box'>
+      <h2 className='title'>Olá</h2>
+      <div className='text'>
+        Para acessar os manuais dos maquinários, clique no botão abaixo. 
+        Os manuais não são oficiais e podem conter erros. Em caso de dúvidas, contate um responsável.
       </div>
+    </div>
       <nav className='box'>
         <Link className="App-link" to="/indice">Clique aqui!</Link>
       </nav>
@@ -145,7 +147,7 @@ function Balança() {
   return (
     <>
     <header className="App-header3">
-        <h2 className="Header">Balança</h2>
+        <h2 className="Header-Title">Balança</h2>
         <p className='text1'>  Insira sua mensagem aqui...<br /> Insira sua mensagem aqui... {/* O <br /> funciona como quebra de linha! */}
         </p>
       <nav className='box'>
@@ -205,7 +207,7 @@ function MoinhoOsc() {
   return (
     <>
     <header className="App-header5">
-      <h2 className="Header">Moinho Oscilatório</h2>
+      <h2 className="Header-Title">Moinho Oscilatório</h2>
       <p className="Header">Insira sua mensagem aqui...</p>
       {/*<nav className='box'>
         <Link className="App-link" to="/teste">Avançar</Link>
