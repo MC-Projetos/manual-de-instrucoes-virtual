@@ -213,7 +213,7 @@ function MoinhoOsc() {
         <Link className="App-link" to="/teste">Avançar</Link>
       </nav>*/}
       <nav className='box'>
-        <Link className="App-link" to="/balanca">Voltar</Link>
+        <Link className="App-link" to="/banho">Voltar</Link>
       </nav>
       <nav className='box'>
         <Link className="App-link" to="/indice">Índice</Link>
