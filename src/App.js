@@ -76,26 +76,33 @@ function AgitadorMec() {
     <>
       <header className="App-header1">
         <h2 className="Header-Title">Agitador Mecânico</h2>
-        <div className='box-read'>
+  
           <li className="Header">
             ⚠️ Atenção, antes de usar verifique: ⚠️ <br></br>
               ● A voltagem do equipamento; <br></br>
               ● Se a tomada está devidamente ligada e aterrada. <br></br><br></br>
 
-            Utilizado para misturar, dissolver ou homogeneizar soluções <br></br> 
-            e suspensões de maneira eficiente e controlada. Para utilizar, siga os seuintes passos:<br></br><br></br>
-              ● Conecte o cabo de alimentação, ligue o interruptor de geral (1); <br></br>
-              ● Defina a velocidade desejada girando controlador de velocidade (3), <br></br> 
-              feito isso pressione o controlador de velocidade (3), o motor ira iniciar; <br></br>
-              ● Para desligar, pressionado novamente o controlador de velocidade (3); <br></br>
-              ● Você pode definir um tempo de trabalho, pressione tecla set (2) <br></br>
-              para modificar o tempo, (faixa de 1-9999 minutos), definir o tempo <br></br> 
-              igual a 0 para desligar a função ,neste momento passará a operar em modo infinito; <br></br>
-              ●  Para modificar a velocidade de subida (RPM / min) gire o controlador de velocidade (3); <br></br>
-              ● Se a operação acima está funcionando normalmente, o instrumento pode ser utilizado; <br></br>
-              ● Se não está funcionando corretamente, o instrumento pode ter configurações de <br></br>
+              ● Para ligar o equipamento, pressione a tecla de on/off por 3 segundos; <br></br>
+              ● Assim, será apresentado no display simultaneamente as seguintes informações: <br></br>
+                  Rotação (RPM), Tempo (Min) e Modo. <br></br> 
+              ● A tecla Set (4), navega-se entre os parâmetros de programação; <br></br>
+              ● Primeiramente seleciona-se o modo, ficará piscando no display MODE 1, <br></br> 
+                com as setas selecione o modo desejado (de 1 a 3); <br></br>
+              ● Pressione mais uma vez a tecla Set e ficará piscando <br></br> 
+                a rotação (RPM) e com as setas selPressione Set mais <br></br> 
+                uma vez e ficará piscando o tempo (Min), com as setas <br></br> 
+                programe o tempo desejado. Se deixar o tempo zerado, <br></br> 
+                o equipamento agitará continuamente, sem contagem de <br></br> 
+                tempo para desligar automaticamente.Para modificar a <br></br> 
+                velocidade de subida (RPM / min) gire o controlador de velocidade (3); <br></br>
+              ● As programações ficarão salvas para cada <br></br> 
+                modo: MODE 1, MODE 2 e MODE 3. <br></br>
+                Para iniciar a agitação e/ou contagem de <br></br> 
+                tempo, pressione a tecla onf/off . Caso queira pausar <br></br>
+                a rotação, basta pressionar a tecla on/off em qualquer momento. <br></br>
+                Para desligar, pressione on/off por 3 segundos a tecla . <br></br>
+              
           </li>
-        </div>
         <img className='agitador'src={agitador}></img>
 
         <nav className='box'>
