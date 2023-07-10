@@ -92,6 +92,14 @@
   }
 
 /* Text*/
+  .row {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+  }
+  .col-1 {
+    width: 10rem;
+  }
   .text{
     font-family: Arial;
     font-size: 20px;
@@ -104,11 +112,10 @@
     font-size: 20px;
     letter-spacing: 2px;
     line-height: 53px;
-    display: block;
-    text-align: center;
-    align-content: space-between;
     padding: 20px;
     margin: 30px;
+    list-style: none;
+    max-width: 606px;
   }
 
 /* Texto botão */
