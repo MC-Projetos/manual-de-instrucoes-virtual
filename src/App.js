@@ -6,6 +6,7 @@ import logo from './img/logo.png';
 import logoeel from './img/logoeel.png';
 import agitador from './img/agitador.png';
 import argamassadeira from './img/argamassadeira.png';
+import balanca from './img/balanca.png';
 
 function App() {
   return (
@@ -127,8 +128,8 @@ function Argamassadeira() {
       <div className='col-1'/>
         <ul className="Header">
           <li>⚠️ Atenção, para a operação existem dois modos: ⚠️</li>
-            <li>Manual</li>
-            <li>Automático</li> <br></br>
+            <li>- Manual</li>
+            <li>- Automático</li> <br></br>
 
           <li>Automático:</li>
             <li>●  Pressione o botão "INICIAR AUTO" no painel de controle digital;</li>
@@ -170,8 +171,23 @@ function Balança() {
     <>
     <header className="App-header3">
         <h2 className="Header-Title">Balança</h2>
-        <p className='text1'>  Insira sua mensagem aqui...<br /> Insira sua mensagem aqui... {/* O <br /> funciona como quebra de linha! */}
-        </p>
+        <div className='row'>
+        <div className='col-1'/>
+          <ul className="Header"> 
+            <li>● Quando o display estiver em branco, indica que a balança foi desconectada da energia. 
+                Por exemplo, quando a balança estiver funcionando pela primeira vez ou 
+                depois de uma queda de energia; </li>
+            <li>● Ligar a balança: mantenha pressionada a tecla de on/off. 
+              Ao ligar, todos os símbolos das funções aparecem brevemente no display da balança, 
+              indicando que a balança está pronta para operar. Se o símbolo de on/off
+              é exibido durante a operação, indica que o processador está executando 
+              uma função e não pode receber outros comandos no momento; </li>
+          <li>● Tara da balança: pressione tecla TARA; </li>
+          </ul>
+        </div>
+
+      <img className='balança'src={balanca}></img>
+  
       <nav className='box'>
         <Link className="App-link" to="/banho">Avançar</Link>
       </nav>
@@ -193,24 +209,22 @@ function BanhoMaria() {
       <div className='row'>
         <div className='col-1'></div>
         <ul className="Header">
-          ⚠️ Atenção, antes de usar verifique: ⚠️ <br></br><br></br>
-              ● A voltagem do equipamento; <br></br>
-              ● Se o equipamento possui o fluido interno. <br></br><br></br>
+          <li>⚠️ Atenção, antes de usar verifique: ⚠️</li>
+          <li>- A voltagem do equipamento; </li>   
+          <li>- Se o equipamento possui o fluido interno. </li> <br></br>
 
-              Após isso, siga as instruções de operação:<br></br>
-
-                ● Conecte o cabo de alimentação na rede elétrica; <br></br>
-                ● Insira o fluido de trabalho na cuba sem encher demais. Mantenha no mínimo <br></br>
-                1 cm de distância entre o fluido e a borda da cuba; <br></br>
-                ● Ligue a chave geral na posição "ligado"; <br></br>
-                ● Acione a chave de agitação. Lembre-se de inserir a <br></br> 
-                pastilha de teflon no interior da cuba;<br></br>
-                ● Configure o controlador de temperatura usandoas <br></br>
-                teclas de incremento e decremento; <br></br>
-                ● Note que ao teclar o visor de temperatura ofertada <br></br> 
-                irá oscilar, configure na temperatura de trabalho. <br></br>
-                Em seguida, o visor de temperatura interna irá começar <br></br>
-                a variar de acordo com a configuração.
+          <li>● Conecte o cabo de alimentação na rede elétrica; </li>
+          <li>● Insira o fluido de trabalho na cuba sem encher demais. Mantenha no mínimo 
+            1 cm de distância entre o fluido e a borda da cuba; </li>
+          <li>● Ligue a chave geral na posição "ligado"; </li>
+          <li>● Acione a chave de agitação. Lembre-se de inserir a 
+            pastilha de teflon no interior da cuba;</li>
+          <li>● Configure o controlador de temperatura usandoas 
+            teclas de incremento e decremento;</li> 
+          <li>● Note que ao teclar o visor de temperatura ofertada  
+            irá oscilar, configure na temperatura de trabalho. 
+            Em seguida, o visor de temperatura interna irá começar 
+            a variar de acordo com a configuração.</li>
         </ul>
       </div>
       <img className='banho-maria'src={banho}></img>
