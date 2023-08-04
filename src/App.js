@@ -7,6 +7,7 @@ import logoeel from './img/logoeel.png';
 import agitador from './img/agitador.png';
 import argamassadeira from './img/argamassadeira.png';
 import balanca from './img/balanca.png';
+import moinho from './img/moinho.png';
 
 function App() {
   return (
@@ -247,10 +248,45 @@ function MoinhoOsc() {
     <>
     <header className="App-header5">
       <h2 className="Header-Title">Moinho Oscilatório</h2>
-      <p className="Header">Insira sua mensagem aqui...</p>
-      {/*<nav className='box'>
-        <Link className="App-link" to="/teste">Avançar</Link>
-      </nav>*/}
+      <div className='row'>
+      <div className='col-1'></div>
+      <ul className="Header">
+          <li>⚠️ Atenção: Recomenda-se proteção auricular! ⚠️</li> <br></br>
+
+          <li>● Conecte o cabo de alimentação à entrada AC na parte traseira da unidade. Ligue o aparelho.
+          Na inicialização, SPEX SamplePrep aparecerá brevemente na tela do visor, 
+          seguido pelo tempo de execução; </li>
+          
+          <li>●  Coloque o frasco carregado com a amostra no grampo. Aperte a tampa do 
+            grampo com o botão de ajuste para encaixar firmemente na tampa do frasco. 
+            Aparafuse a porca de travamento para prender o frasco na braçadeira; </li>
+          
+          <li>● Para definir o tempo de execução, use os quatro botões de seta para ajustar os minutos 
+            e os segundos. Os botões MINUTES mudarão a configuração dos minutos em incrementos de 1 minuto, 
+            e os botões SECONDS mudarão a configuração dos segundos em incrementos de 5 segundos. 
+            Pressione a seta PARA CIMA (ÿ) para aumentar o tempo de execução em incrementos de 5 
+            segundos ou pressione a seta PARA BAIXO (v) para diminuir o tempo de 
+            xecução em incrementos de 5 segundos. O tempo máximo de execução é de 100,00 min; </li>
+
+          <li>● Pressione o botão START para iniciar um ciclo de moagem. Haverá uma breve pausa 
+            enquanto o intertravamento da tampa é acionado e, em seguida, o motor do misturador/moinho 
+            será acionado. O cronômetro faz a contagem regressiva 1 segundo de cada vez, mostrando o tempo 
+            restante na execução. Quando o cronômetro chegar a zero e o motor desligar, o cronômetro 
+            exibirá RUN COMPLETE por 4 segundos enquanto a trava rotativa permanece travada. 
+            Isso permite que o mecanismo de fixação desacelere. Quando a trava rotativa liberar a tampa 
+            (com um clique audível), o visor do timer retornará à sua configuração anterior. 
+            Nunca tente abrir a tampa antes que a trava rotativa se solte; isso pode danificar a trava rotativa;</li>
+         
+          <li>● Para que o moinho pare durante uma operação e mantenha a configuração do cronômetro, 
+            pressione o botão PAUSE. O motor desligará e aparecerá PAUSED no display. A trava rotativa 
+            não será liberada. Pressione o botão PAUSE uma segunda vez e a trava rotativa será
+            liberada. Para retomar a corrida, feche a tampa e pressione START; o cronômetro exibirá brevemente 
+            o número exato de segundos restantes na execução e, em seguida, continuará a contagem 
+            regressiva em incrementos de 1 segundo. Para abortar a execução, pressione STOP; RUN
+            COMPLETE será exibido por quatro segundos e a trava rotativa será liberada.</li> 
+        </ul>
+      </div>
+      <img className='moinho'src={moinho}></img>
       <nav className='box'>
         <Link className="App-link" to="/banho">Voltar</Link>
       </nav>

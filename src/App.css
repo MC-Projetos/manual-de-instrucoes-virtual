@@ -96,6 +96,7 @@
     display: flex;
     justify-items: center;
     align-items: center;
+    margin-left: -84px;
   }
   .col-1 {
     width: 10rem;
