@@ -192,6 +192,13 @@
   }
 
 /* Imagens */
+  #img {
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    width: 388px;
+    top: -38px;
+  }
   .banho-maria {
     display: inline-block;
     overflow: hidden;

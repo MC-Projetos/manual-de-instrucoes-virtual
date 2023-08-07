@@ -105,7 +105,7 @@ function AgitadorMec() {
                 Para desligar, pressione on/off por 3 segundos a tecla.</li> 
           </ul>
           </div>
-        <img className='agitador'src={agitador}></img>
+        <img className='agitador'src={agitador} id="img"></img>
 
         <nav className='box'>
           <Link className="App-link" to="/argamassadeira">Avançar</Link>
@@ -153,7 +153,7 @@ function Argamassadeira() {
           <li>● Dessa forma será posível controlar o tempo de execução e a velocidade do ensaio de acordo com os seus requisitos.</li>
         </ul>
       </div>
-      <img className='argamassadeira'src={argamassadeira}></img>
+      <img className='argamassadeira'src={argamassadeira} id="img" ></img>
       <nav className='box'>
         <Link className="App-link" to="/balanca">Avançar</Link>
       </nav>
@@ -187,7 +187,7 @@ function Balança() {
           </ul>
         </div>
 
-      <img className='balança'src={balanca}></img>
+      <img className='balança'src={balanca} id="img" ></img>
   
       <nav className='box'>
         <Link className="App-link" to="/banho">Avançar</Link>
@@ -228,7 +228,7 @@ function BanhoMaria() {
             a variar de acordo com a configuração.</li>
         </ul>
       </div>
-      <img className='banho-maria'src={banho}></img>
+      <img className='banho-maria'src={banho} id="img" ></img>
       <nav className='box'>
         <Link className="App-link" to="/moinho">Avançar</Link>
       </nav>
@@ -286,7 +286,7 @@ function MoinhoOsc() {
             COMPLETE será exibido por quatro segundos e a trava rotativa será liberada.</li> 
         </ul>
       </div>
-      <img className='moinho'src={moinho}></img>
+      <img className='moinho'src={moinho} id="img" ></img>
       <nav className='box'>
         <Link className="App-link" to="/banho">Voltar</Link>
       </nav>
