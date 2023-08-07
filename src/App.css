@@ -93,10 +93,10 @@
 
 /* Text*/
   .row {
-    display: flex;
+ 
     justify-items: center;
     align-items: center;
-    margin-left: -84px;
+    margin-left: 3px;
   }
   .col-1 {
     width: 10rem;
